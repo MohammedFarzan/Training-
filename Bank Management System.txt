@@ -140,7 +140,7 @@ db.bank.ensureIndex({"_id":1})
     {"customerDetails.customerName":1})
 
 5----------------------------------------------------------------------------
-// •Find the name, city, and assets of the branch with the largest assets.
+// â€¢Find the name, city, and assets of the branch with the largest assets.
 
  
       db.bank.aggregate([{ $group :
@@ -149,7 +149,7 @@ db.bank.ensureIndex({"_id":1})
 6----------------------------------------------------------------------------
      
 
-//•The names and cities of customers who have a loan at Pune branch. 
+//â€¢The names and cities of customers who have a loan at Pune branch. 
          
       db.bank.find({"customerDetails.loanAmount":{$gt:0.00},
                 "branchDetails.branchCity":"Pune"},
@@ -211,7 +211,7 @@ db.bank.aggregate([{$group:{_id:"$branchDetails.branchName",Average:{$avg:"$bala
 
 ---------------------------------------------------------------------------
            
-15//Deposit an additional Rs. 20,000 to Ram’s bank account. 
+15//Deposit an additional Rs. 20,000 to Ramâ€™s bank account. 
        
        db.bank.update(
    { "customerDetails.customerName": "Ram" },
@@ -221,8 +221,8 @@ db.bank.aggregate([{$group:{_id:"$branchDetails.branchName",Average:{$avg:"$bala
 
 
  The names of branches whose assets are greater than the assets of all branches in    Hyderabad. 
-•	 The branch with the largest average balance. 
+â€¢	 The branch with the largest average balance. 
 
-    •	The branch name and number of customers for each branch
+    â€¢	The branch name and number of customers for each branch
 
 
