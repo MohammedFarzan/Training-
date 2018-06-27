@@ -220,9 +220,6 @@ db.bank.aggregate([{$group:{_id:"$branchDetails.branchName",Average:{$avg:"$bala
 ---------------------------------------------------------------------------
 
 
- The names of branches whose assets are greater than the assets of all branches in    Hyderabad. 
-•	 The branch with the largest average balance. 
-
-    •	The branch name and number of customers for each branch
+ 
 
 
