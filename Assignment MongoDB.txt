@@ -1,0 +1,228 @@
+------------------------------------------------------------------------
+
+db.bank.insert({"_id":1,
+    accountNumber:"AC001",
+    balance:5000.00,
+    customerDetails:{customerID:"C001",customerName:"Mohd. Farzan",
+        street:"Venkateshwar Nagar",city:"Chennai",loanAmount:12000.00,depositAmount:5000.00},
+    branchDetails:{branchName:"Giri Nagar",branchCity:"Chennai",assets:2000000.00}            
+    })
+db.bank.insert({"_id":2,
+    accountNumber:"AC002",
+    balance:15000.00,
+    customerDetails:{customerID:"C002",customerName:"Arun",
+        street:"Venkateshwar Nagar",city:"Chennai",loanAmount:20000.00,depositAmount:15000.00},
+    branchDetails:{branchName:"Giri Nagar",branchCity:"Chennai",assets:3000000.00}            
+    })
+    
+    db.bank.insert({"_id":3,
+    accountNumber:"AC003",
+    balance:3000.00,
+    customerDetails:{customerID:"C003",customerName:"Shashank",
+        street:"14th Cross",city:"Chennai",loanAmount:7000.00,depositAmount:6000.00},
+    branchDetails:{branchName:"Ramapuram",branchCity:"Chennai",assets:3500000.00}            
+    })
+    
+    db.bank.insert({"_id":4,
+    accountNumber:"AC004",
+    balance:750.00,
+    customerDetails:{customerID:"C004",customerName:"Kaushal",
+        street:"Aruna Hills",city:"Pune",loanAmount:8000.00,depositAmount:6500.00},
+    branchDetails:{branchName:"GPO",branchCity:"Pune",assets:6000000.00}            
+    })
+    
+     db.bank.insert({"_id":5,
+    accountNumber:"AC005",
+    balance:800.00,
+    customerDetails:{customerID:"C005",customerName:"Sahil",
+        street:"Patil Nagar",city:"Pune",loanAmount:7000.00,depositAmount:6500.00},
+    branchDetails:{branchName:"Agrasen",branchCity:"Pune",assets:9000000.00}            
+    })
+
+
+     db.bank.insert({"_id":6,
+    accountNumber:"AC006",
+    balance:900.00,
+    customerDetails:{customerID:"C006",customerName:"Aman",
+        street:"Mani Nagar",city:"Pune",loanAmount:13000.00,depositAmount:10500.00},
+    branchDetails:{branchName:"Shivaji",branchCity:"Pune",assets:1000000.00}            
+    })
+    
+    
+     db.bank.insert({"_id":7,
+    accountNumber:"AC007",
+    balance:1200.00,
+    customerDetails:{customerID:"C007",customerName:"Nikhil",
+        street:"Shamli Hills",city:"Hyderabad",loanAmount:7500.00,depositAmount:6200.00},
+    branchDetails:{branchName:"Bairagarh",branchCity:"Hyderabad",assets:6000000.00}            
+    })
+    
+        
+     db.bank.insert({"_id":8,
+    accountNumber:"AC008",
+    balance:100.00,
+    customerDetails:{customerID:"C008",customerName:"Disha",
+        street:"Vijay Nagar",city:"Hyderabad",loanAmount:10000.00,depositAmount:9900.00},
+    branchDetails:{branchName:"Lalghati",branchCity:"Hyderabad",assets:6000000.00}            
+    })
+    
+        
+     db.bank.insert({"_id":9,
+    accountNumber:"AC009",
+    balance:8500.00,
+    customerDetails:{customerID:"C009",customerName:"Tushar",
+        street:"Anand Nagar",city:"Hyderabad",loanAmount:30000.00,depositAmount:23000.00},
+    branchDetails:{branchName:"Pipliya",branchCity:"Hyderabad",assets:5500000.00}            
+    })
+        
+     db.bank.insert({"_id":10,
+    accountNumber:"AC010",
+    balance:1800.00,
+    customerDetails:{customerID:"C010",customerName:"Ram",
+        street:"Star Hill",city:"Hyderabad",loanAmount:23000.00,depositAmount:22000.00},
+    branchDetails:{branchName:"Rajendra Nagar",branchCity:"Hyderabad",assets:3500000.00}            
+    })
+        db.bank.insert({"_id":11,
+    accountNumber:"AC011",
+    balance:0.00,
+    customerDetails:{customerID:"C011",customerName:"Ramesh",
+        street:"Vasishali",city:"Indore",loanAmount:0,depositAmount:0.00},
+    branchDetails:{branchName:"Annapurna",branchCity:"Indore",assets:2500000.00}            
+    })
+    
+    db.bank.insert({"_id":12,
+    accountNumber:"AC012",
+    balance:500.00,
+    customerDetails:{customerID:"C012",customerName:"Navaid",
+        street:"TT nagar",city:"Raipur",loanAmount:0,depositAmount:0.00},
+    branchDetails:{branchName:"Star Market",branchCity:"Raipur",assets:2500000.00}            
+    })
+    
+     db.bank.insert({"_id":13,
+    accountNumber:"AC013",
+    balance:9000.00,
+    customerDetails:{customerID:"C013",customerName:"Akshita",
+        street:"SRM",city:"Chennai",loanAmount:10000,depositAmount:0.00},
+    branchDetails:{branchName:"Sri Ram",branchCity:"Chennai",assets:3800000.00}            
+    })
+       db.bank.insert({"_id":14,
+    accountNumber:"AC014",
+    balance:7550.00,
+    customerDetails:{customerID:"C014",customerName:"Ambar",
+        street:"Airport Nagar",city:"Pune",loanAmount:0,depositAmount:9700.00},
+    branchDetails:{branchName:"CP",branchCity:"Pune",assets:900000.00}            
+    })
+    
+    db.bank.find()
+
+
+1 & 2----------------------------------------------------------------------------
+//Choose appropriate primary key(s)
+//Create index on primary key(s)
+
+
+db.bank.ensureIndex({"_id":1})
+
+
+3----------------------------------------------------------------------------
+//The names and cities of all borrowers
+
+   db.bank.find({"customerDetails.loanAmount":{$gt:0.00}},
+    {"customerDetails.customerName":1,"customerDetails.city":1})
+
+4----------------------------------------------------------------------------
+
+// The names of borrowers who live in Chennai. 
+    
+    
+     db.bank.find({"customerDetails.loanAmount":{$gt:0.00},
+     "customerDetails.city":"Chennai"},
+    {"customerDetails.customerName":1})
+
+5----------------------------------------------------------------------------
+// •Find the name, city, and assets of the branch with the largest assets.
+
+ 
+      db.bank.aggregate([{ $group :
+     { _id:1, maxAssets: { $max : "$branchDetails.assets" }}}])
+
+6----------------------------------------------------------------------------
+     
+
+//•The names and cities of customers who have a loan at Pune branch. 
+         
+      db.bank.find({"customerDetails.loanAmount":{$gt:0.00},
+                "branchDetails.branchCity":"Pune"},
+                {"customerDetails.customerName":1,"customerDetails.city":1})
+
+7 ---------------------------------------------------------------------------
+
+//Find the number of accounts with balances between 700 and 900
+   
+   db.bank.find({$and: [{balance:{$gte:700}} , {balance:{$lte:900}} ]}).count()
+
+8---------------------------------------------------------------------------
+//The names of customers with both accounts and loans at Pune branch. 
+
+
+
+db.bank.find({"customerDetails.loanAmount":{$gt:0},"customerDetails.depositAmount":{$gt:0}
+   ,"branchDetails.branchCity":"Pune"},{"customerDetails.customerName":1})
+
+
+9---------------------------------------------------------------------------
+
+db.bank.find( "this.customerDetails.loanAmount > this.balance " )
+
+
+
+
+10--------------------------------------------------------------------------
+     
+     
+//The names of customers living on streets with names ending in "Hill". 
+             db.bank.find({"customerDetails.street":{$regex:"Hill$"}},
+            {"customerDetails.customerName":1})
+
+11---------------------------------------------------------------------------
+                
+//  The names of customers with an account but not a loan at Pune branch. 
+   
+   
+   db.bank.find({"customerDetails.loanAmount":0, "branchDetails.branchCity":"Pune"},
+     {"customerDetails.customerName":1})
+
+12--------------------------------------------------------------------------
+
+// `The branch name and number of customers for each branch
+
+	
+   db.bank.aggregate([{$group:{_id:"$branchDetails.branchName",count:{$sum:1}}}])
+   
+
+13--------------------------------------------------------------------------
+
+// The branch with the largest average balance.
+
+
+db.bank.aggregate([{$group:{_id:"$branchDetails.branchName",Average:{$avg:"$balance"}}},
+{$sort:{"Average Balance":-1}},{$limit:1}])
+
+
+---------------------------------------------------------------------------
+           
+15//Deposit an additional Rs. 20,000 to Ram’s bank account. 
+       
+       db.bank.update(
+   { "customerDetails.customerName": "Ram" },
+   { $inc: { balance: 20000 } })
+   
+---------------------------------------------------------------------------
+
+
+ The names of branches whose assets are greater than the assets of all branches in    Hyderabad. 
+•	 The branch with the largest average balance. 
+
+    •	The branch name and number of customers for each branch
+
+
