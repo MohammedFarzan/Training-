@@ -1,0 +1,414 @@
+/* 1 */
+{
+    "_id" : ObjectId("5b2cc27e3efe906c92467f08"),
+    "restaurant_id" : "RST01",
+    "Name" : "Ocean View",
+    "Address" : {
+        "Street" : "4th cross street",
+        "city" : "Chennai",
+        "pincode" : 400009.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "South Indian"
+        ],
+        "Continental" : [ 
+            "Italian", 
+            "Mexican", 
+            "Chinese"
+        ]
+    },
+    "district" : "Chennai",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.1,
+            "score" : 75.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.2,
+            "score" : 78.0
+        }
+    ]
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("5b2cc7d63efe906c92467f09"),
+    "restaurant_id" : "RST02",
+    "Name" : "Lazeez",
+    "Address" : {
+        "Street" : "5th cross street",
+        "city" : "Chennai",
+        "pincode" : 400009.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "South Indian"
+        ],
+        "Continental" : [ 
+            "Mexican", 
+            "Chinese"
+        ]
+    },
+    "district" : "Chennai",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.2,
+            "score" : 80.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.2,
+            "score" : 85.0
+        }
+    ]
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("5b2cc8373efe906c92467f0a"),
+    "restaurant_id" : "RST03",
+    "Name" : "Guru Kripa",
+    "Address" : {
+        "Street" : "6th cross street",
+        "city" : "Chennai",
+        "pincode" : 400009.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "South Indian"
+        ],
+        "Continental" : [ 
+            "Thai", 
+            "Chinese"
+        ]
+    },
+    "district" : "Chennai",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.2,
+            "score" : 80.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.3,
+            "score" : 90.0
+        }
+    ]
+}
+
+/* 4 */
+{
+    "_id" : ObjectId("5b2cc8aa3efe906c92467f0b"),
+    "restaurant_id" : "RST04",
+    "Name" : "Nothern Connectios",
+    "Address" : {
+        "Street" : "7th cross street",
+        "city" : "Chennai",
+        "pincode" : 400009.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "South Indian"
+        ],
+        "Continental" : [ 
+            "American", 
+            "Thai", 
+            "Chinese"
+        ]
+    },
+    "district" : "Chennai",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.2,
+            "score" : 92.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.4,
+            "score" : 95.0
+        }
+    ]
+}
+
+/* 5 */
+{
+    "_id" : ObjectId("5b2cc93f3efe906c92467f0c"),
+    "restaurant_id" : "RST05",
+    "Name" : "Lake View",
+    "Address" : {
+        "Street" : "8th cross street",
+        "city" : "Chennai",
+        "pincode" : 400009.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "Maharashtran"
+        ],
+        "Continental" : [ 
+            "Japanese", 
+            "Chinese"
+        ]
+    },
+    "district" : "Chennai",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.1,
+            "score" : 72.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 3.5,
+            "score" : 60.0
+        }
+    ]
+}
+
+/* 6 */
+{
+    "_id" : ObjectId("5b2cc9b63efe906c92467f0d"),
+    "restaurant_id" : "RST06",
+    "Name" : "Aloha",
+    "Address" : {
+        "Street" : "9th cross street",
+        "city" : "Mumbai",
+        "pincode" : 400008.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "Maharashtran"
+        ],
+        "Continental" : [ 
+            "Japanese", 
+            "Chinese", 
+            "Italian"
+        ]
+    },
+    "district" : "Mumbai",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.1,
+            "score" : 84.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.3,
+            "score" : 80.0
+        }
+    ]
+}
+
+/* 7 */
+{
+    "_id" : ObjectId("5b2cca333efe906c92467f0e"),
+    "restaurant_id" : "RST07",
+    "Name" : "Welcome",
+    "Address" : {
+        "Street" : "10th cross street",
+        "city" : "Rakot",
+        "pincode" : 400007.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati"
+        ],
+        "Continental" : [ 
+            "Chinese"
+        ]
+    },
+    "district" : "Gujrat",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.0,
+            "score" : 88.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.1,
+            "score" : 72.0
+        }
+    ]
+}
+
+/* 8 */
+{
+    "_id" : ObjectId("5b2ccb3f3efe906c92467f0f"),
+    "restaurant_id" : "RST08",
+    "Name" : "Dining",
+    "Address" : {
+        "Street" : "11th cross street",
+        "city" : "Delhi",
+        "pincode" : 400006.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Gujrati", 
+            "Rajasthani"
+        ],
+        "Continental" : [ 
+            "Chinese", 
+            "Italian"
+        ]
+    },
+    "district" : "Delhi",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 3.0,
+            "score" : 60.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 3.5,
+            "score" : 58.0
+        }
+    ]
+}
+
+/* 9 */
+{
+    "_id" : ObjectId("5b2ccc323efe906c92467f10"),
+    "restaurant_id" : "RST09",
+    "Name" : "HotSpot",
+    "Address" : {
+        "Street" : "12th cross street",
+        "city" : "Delhi",
+        "pincode" : 400005.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Rajasthani", 
+            "Mughalai"
+        ],
+        "Continental" : [ 
+            "Chinese", 
+            "Italian", 
+            "French"
+        ]
+    },
+    "district" : "Lucknow",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 4.5,
+            "score" : 92.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 4.6,
+            "score" : 95.0
+        }
+    ]
+}
+
+/* 10 */
+{
+    "_id" : ObjectId("5b2cd1b43efe906c92467f11"),
+    "restaurant_id" : "RST09",
+    "Name" : "Royal Kitchen",
+    "Address" : {
+        "Street" : "13th cross street",
+        "city" : "Hyderabad",
+        "pincode" : 400003.0
+    },
+    "cuisine" : {
+        "Indian" : [ 
+            "Punjabi", 
+            "Rajasthani", 
+            "Mughalai", 
+            "Gujrati"
+        ],
+        "Continental" : [ 
+            "Chinese", 
+            "Italian", 
+            "Mexican"
+        ]
+    },
+    "district" : "Hyderabad",
+    "ratings" : [ 
+        {
+            "date" : ISODate("1970-01-01T00:00:00.000Z"),
+            "ratings" : 3.8,
+            "score" : 74.0
+        }, 
+        {
+            "date" : ISODate("2019-10-05T18:30:00.000Z"),
+            "ratings" : 3.9,
+            "score" : 75.0
+        }
+    ]
+}
+-------------------------------------------------------------------------------------------
+
+****************************************QUERRIES******************************************
+
+use restaurant
+
+--1. Write a MongoDB query to display all the documents in the collection restaurants.  
+db.restaurant.find()
+
+--2. Write a MongoDB query to display the fields restaurant_id, name, and cuisine for all the documents in the collection restaurant
+db.restaurant.find({},{"restaurant_id": 1 , "Name":1 ,"cuisine":1})  
+
+--3. Write a MongoDB query to display the fields restaurant_id, name, and cuisine, but exclude the field _id for all the documents in the collection restaurant. 
+db.restaurant.find({},{"restaurant_id" : 1,"name":1,"cuisine" :1,"_id":0});
+ 
+--4. Write a MongoDB query to display the fields restaurant_id, name, and zip code, but exclude the field _id for all the documents in the collection restaurant. 
+db.restaurant.find({},{"restaurant_id" : 1,"name":1,"Address.pincode" :1,"_id":0});
+
+--5. Write a MongoDB query to display all the restaurant which is in Chennai
+db.restaurant.find({"Address.city": "Chennai"})
+
+--6. Write a MongoDB query to display the first 5 restaurant which is in the district Chennai.  
+db.restaurant.find({"Address.city": "Chennai"}).limit(5)
+
+--7.Write a MongoDB query to display the next 5 restaurants after skipping first 5 which are in the Chennai
+db.restaurant.find({"district": "Chennai"}).skip(5).limit(5)
+
+--8. Write a MongoDB query to find the restaurants who achieved a score more than 90.
+db.restaurant.find({ ratings: { $elemMatch:{"score":{$gt : 90}}}});
+
+--9. Write a MongoDB query to find the restaurants that achieved a score, more than 80 but less than 100. 
+db.restaurant.find({ ratings: { $elemMatch:{"score":{$gt : 80,$lt:100}}}});
+
+--25. Write a MongoDB query to arrange the name of the restaurants in ascending order along with all the columns 
+db.restaurant.find().sort({"name":1});
+
+--26. Write a MongoDB query to arrange the name of the restaurants in descending along with all the columns.  
+db.restaurant.find().sort({"name":-1});
+
+--27. Write a MongoDB query to arranged the name of the cuisine in ascending order and for that same cuisine district should be in descending order. 
+db.restaurant.find().sort({"cuisine":1,"district" : -1,}); 
+
+--28. Write a MongoDB query to know whether all the addresses contains the street or not.
+db.restaurant.find({"Address.Street" :{ $exists : true }});
+
+
+
+
+
+
+
