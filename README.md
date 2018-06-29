@@ -1,1 +1,1 @@
-# Mean Mern training-
+# Mean Mern -
