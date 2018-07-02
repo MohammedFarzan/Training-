@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="D:\js\angular.min.js">
+
+		</script>
+</head>
+<body ng-App="" ng-init="employees = [{empId : 'e1001' , empName : 'Farzan' , salary : 1000} , 
+										{empId : 'e1002' , empName : 'Shashank' , salary : 2000},
+										{empId : 'e1001' , empName : 'Tanay' , salary : 3000}]" />
+
+
+<table border="1">
+	<tr>
+		<th>Employee ID</th>
+		<th>Employee Name</th>
+		<th>Employee Salary</th>
+	</tr>
+
+	<tr>
+		<td>{{employees[0].empId}}</td>
+		<td>{{employees[0].empName}}</td>
+		<td>{{employees[0].salary}}</td>
+	</tr>
+	
+	
+	<tr>
+		<td>{{employees[1].empId}}</td>
+		<td>{{employees[1].empName}}</td>
+		<td>{{employees[1].salary}}</td>
+	</tr>
+
+	<tr>
+		<td>{{employees[2].empId}}</td>
+		<td>{{employees[2].empName}}</td>
+		<td>{{employees[2].salary}}</td>
+	</tr>
+</table>
+	
+	
+	
+
+</body>
+</html>

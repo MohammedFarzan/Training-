@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+	<script src="D:\js\angular.min.js">
+
+		</script>
+</head>
+<body ng-App="" ng-init="employees = [{empId : 'e1001' , empName : 'Farzan' , salary : 1000} , 
+										{empId : 'e1002' , empName : 'Shashank' , salary : 2000},
+										{empId : 'e1001' , empName : 'Tanay' , salary : 3000}]" />
+
+
+<table border="1" >
+	<tr style= "background-color:pink">
+		<th>Employee ID</th>
+		<th>Employee Name</th>
+		<th>Employee Salary</th>
+	</tr>
+
+	<tr ng-repeat = "emp in employees|orderBy:empName:true">
+		<td>{{emp.empId}}</td>
+		<td>{{emp.empName}}</td>
+		<td>{{emp.salary}}</td>
+	</tr>
+	
+</table>
+	
+	
+	
+
+</body>
+</html>
+
+</body>
+</html>
+

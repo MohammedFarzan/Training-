@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="D:\js\angular.min.js">
+
+		</script>
+</head>
+<body ng-App="" ng-init="names=['Ram','Arun','Raj']" style=" padding: 30px;
+    text-align: center;background-color: lightgreen" >
+	<h1> Names</h1>
+	<input type="text" ng-model="nameFilter"/>
+	<div ng-repeat = "name in names| filter: nameFilter" style="background-color:lightblue; "   >
+		{{$index+1}} => {{ name }}
+	</div>	
+	
+
+</body>
+</html>
